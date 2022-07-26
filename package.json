@@ -1,0 +1,26 @@
+{
+  "name": "microservicios-brx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanmarcelo5/microservicios-brx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanmarcelo5/microservicios-brx/issues"
+  },
+  "homepage": "https://github.com/juanmarcelo5/microservicios-brx#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.7"
+  }
+}
