@@ -1,11 +1,11 @@
 const { Router } = require('express');
+const { login } = require('../controller/auth');
 const router = Router();
 
-router.post('/login',(req,res)=>{
-res.json({
-  msg:'Todo ok post'
-})
-});
+router.post('/',login);
+
+
+module.exports = router
 
 
 

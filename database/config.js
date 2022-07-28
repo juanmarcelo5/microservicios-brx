@@ -1,21 +1,8 @@
-const mongoose = require('mongoose')
-const dbConection =  async ()=>{
-    try {
-        await mongoose.connect(process.env.MONGO_CNN,{
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            
-            
-        })
-        console.log('Base de datos online ');
+const {Sequelize} = require('sequelize')
+const sequelizeDB = new Sequelize('platzi-market','postgres','1',{
+  host:'localhost',
+  dialect:'postgres'
+})
 
-    } catch (error) {
-        console.log(error);
-        throw new Error('Error en la DB');
-    }
+module.exports = sequelizeDB
 
-}
-
-module.exports = {
-    dbConection
-}
